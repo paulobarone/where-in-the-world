@@ -5,8 +5,7 @@ export default function Card({props}) {
   const navigate = useNavigate();
 
   function redirectCountry(country) {
-    window.scrollTo(0, 0);
-    navigate(`/${country.name.common}`, { state: { country } });
+    navigate(`/${country.name.common}`, { state: country });
   }
 
   return (
