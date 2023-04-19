@@ -25,13 +25,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if(region === 'All') {
-      setCountries(allCountries);
-    } else {
-      const filtered = allCountries.filter(country => country.region === region);
-      setCountries(filtered);
-    }
-    console.log('trade')
+    handleRegion()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [region])
 
@@ -43,10 +37,19 @@ export default function Home() {
       });
       filtered.length > 0 ? setCountries(filtered) : setCountries(null)
     } else {
-      setCountries(allCountries)
+      handleRegion()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchText, allCountries])
+  }, [searchText]);
+
+  const handleRegion = () => {
+    if(region === 'All') {
+      setCountries(allCountries);
+    } else {
+      const filtered = allCountries.filter(country => country.region === region);
+      setCountries(filtered);
+    }
+  }
 
   return (
     <>
