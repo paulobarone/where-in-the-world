@@ -5,12 +5,13 @@ import CountriesStorage from '../../contexts/CountriesContext';
 export default function Search() {
   const [ searchText, setSearchText ] = useState('');
   const { allCountries, setCountries } = useContext(CountriesStorage);
-
+  console.log(allCountries)
+  
   useEffect(() => {
     if(searchText !== '') {
       const filtered = allCountries.filter(({ name }) => {
         const regex = new RegExp(`${searchText}`, "i");
-        return name.common.match(regex);
+        return name.match(regex);
       });
       filtered.length > 0 ? setCountries(filtered) : setCountries(null)
     } else {

@@ -11,12 +11,11 @@ export default function Home() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("https://restcountries.com/v3.1/all");
+      const response = await fetch("https://restcountries.com/v2/all");
       const data = await response.json();
 
-      const dataStr = data.sort((a, b) => a.name.common.localeCompare(b.name.common))
-      setAllCountries(dataStr);
-      setCountries(dataStr);
+      setAllCountries(data);
+      setCountries(data);
     }
 
     fetchData()
@@ -33,7 +32,7 @@ export default function Home() {
     if(searchText !== '') {
       const filtered = allCountries.filter(({ name }) => {
         const regex = new RegExp(`${searchText}`, "i");
-        return name.common.match(regex);
+        return name.match(regex);
       });
       filtered.length > 0 ? setCountries(filtered) : setCountries(null)
     } else {
