@@ -5,7 +5,6 @@ import CountriesStorage from '../../contexts/CountriesContext';
 export default function Search() {
   const [ searchText, setSearchText ] = useState('');
   const { allCountries, setCountries } = useContext(CountriesStorage);
-  console.log(allCountries)
   
   useEffect(() => {
     if(searchText !== '') {

@@ -53,7 +53,6 @@ export default function Home() {
   return (
     <>
       <div>
-        {/* <button onClick={() => console.log(countries)} className='bg-white flex items-center gap-3 cursor-pointer shadow-lg py-3 px-8 rounded-lg dark:bg-darkModeElements dark:text-white'>Show Data</button> */}
         <div className="px-5 md:px-24 py-10 flex flex-col gap-3 sm:flex-row sm:justify-between sm:gap-24">
           <div className="relative w-full max-w-lg">
             <SearchIcon className="absolute top-3 left-4 dark:text-white" />

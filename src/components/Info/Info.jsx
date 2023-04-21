@@ -1,6 +1,6 @@
 export default function Info(props) {
   return (
-    <p className="dark:text-white">{props.name}: <span className="dark:text-gray">{props.data}</span>
+    <p className="dark:text-white font-semibold">{props.name}: <span className="dark:text-gray font-normal">{props.data}</span>
     </p>
   )
 }
