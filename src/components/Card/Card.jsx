@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import Info from "../Info/Info";
 
 export default function Card({props}) {
-
   const navigate = useNavigate();
 
   function redirectCountry(country) {
@@ -16,7 +15,7 @@ export default function Card({props}) {
         <h3 className='mb-3 text-xl font-bold dark:text-white'>{props.name}</h3>
         <Info name="Population" data={(props.population).toLocaleString()} />
         <Info name="Region" data={props.region} />
-        <Info name="Capital" data={props.capital} />
+        <Info name="Capital" data={props.capital || "None"} />
       </div>
     </div>
   )

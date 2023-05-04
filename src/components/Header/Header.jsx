@@ -20,7 +20,7 @@ export default function Header() {
   }, [dark])
 
   return (
-    <header className='flex justify-between px-5 md:px-24 py-10 shadow-lg dark:bg-darkModeElements'>
+    <header className='flex justify-between px-[10%] py-10 shadow-lg dark:bg-darkModeElements'>
       <h1 className='font-semibold dark:text-white'>Where in the world?</h1>
       <button className='flex gap-1 dark:text-white' onClick={handleThemeSwitch}>
         {dark ? <LightModeOutlinedIcon /> : <DarkModeOutlinedIcon />}
