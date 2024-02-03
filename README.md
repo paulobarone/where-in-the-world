@@ -1,40 +1,18 @@
-# Frontend Mentor - Age calculator app solution
+# Where in the World
 
-This is a solution to the [REST Countries API with color theme switcher](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+## Descrição
 
-## Table of contents
+O projeto "Where in the World" é uma aplicação web que utiliza a API de informações sobre países. O site oferece uma experiência intuitiva e informativa, permitindo a exploração detalhada de dados de todos os países. Com suporte a tema claro e escuro, o projeto oferece uma interface amigável e fácil de usar.
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+## Tecnologias Utilizadas
 
-## Overview
+- **React:** Utilizado para criar uma interface dinâmica e responsiva, possibilitando a atualização em tempo real dos dados dos países.
+- **TailwindCSS:** Adotado para estilização, o TailwindCSS oferece uma abordagem utilitária que simplifica o design responsivo e tematização.
+- **API:** Utilizada para obter informações detalhadas sobre todos os países.
 
-### The challenge
+## Funcionalidades
 
-Users should be able to:
-
-- See all countries from the API on the homepage
-- Search for a country using an `input` field
-- Filter countries by region
-- Click on a country to see more detailed information on a separate page
-- Click through to the border countries on the detail page
-- Toggle the color scheme between light and dark mode
-
-### Links
-
-- Solution URL: [FrontEnd Mentor Solution](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca/hub)
-- Live Site URL: [Final Solution Website]([https://age-calculator-psi-nine.vercel.app/](https://where-in-the-world-rouge.vercel.app))
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [TailwindCss](https://tailwindcss.com/) - For styles
+- Visualização detalhada de informações sobre todos os países.
+- Paginação para facilitar a navegação e concentração de informações.
+- Filtros por região para uma busca eficiente.
+- Tematização light e dark para personalização da experiência.
